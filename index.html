@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Задание 1</title>
+  <style>
+    table, table * { border: 1px solid black; }
+
+    .paragraph {}
+    .paragraph--bold { font-weight: bold; }
+    .paragraph--italic { font-style: italic; }
+  </style>
+</head>
+<body>
+  <p id="ideveloper">Я пишу текст для окна браузера, например Google Chrome.</p>
+
+  <h1>Это заголовок H1</h1>
+  <h2>Это заголовок H2</h2>
+
+  <p>
+    Текст внутри
+    <br>
+    тега p
+    <!--
+      Но ведь это элемент p (а не тег), который состоит из двух тегов:
+      <p> и </p>, а также содержимого между ними
+    -->
+  </p>
+
+  <p class="paragraph paragraph--bold">Текст жирный</p>
+  <p class="paragraph paragraph--italic">Текст курсивом</p>
+
+  <div>
+    <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" title="К первому видео на YouTube" target="_blank">
+      Ролик на YouTube
+    </a>
+    <br>
+    <a href="#ideveloper" title="К параграфу ideveloper">
+      Якорь на параграф ideveloper
+    </a>
+  </div>
+
+  <ul>
+    <li>Первый элемент списка</li>
+    <li>Второй элемент списка</li>
+    <li>
+      <a href="https://yandex.ru/" title="На главную страницу Yandex" target="_blank">Yandex</a>
+      ссылка на главную страницу
+    </li>
+  </ul>
+
+  <hr>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Наименование фрукта</th>
+        <th>Кол-во</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Яблоко</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Апельсин</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td colspan="2">Итог: 5</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
